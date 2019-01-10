@@ -1,25 +1,25 @@
-def sign_up
-    require 'io/console'
+
+
+
+require 'io/console'
  puts "Give me a password"
- password = STDIN.noecho(&:gets).chomp 
+ password = STDIN.noecho(&:gets).chomp
 
-end
 
-puts sign_up
 
-def login
 
-    puts "Please put your password"
-    answer = gets.chomp
-    if answer == password
-        puts "Welcome user"
 
+    puts "Please enter your password"
+    input = gets.chomp
+    while
+      input != password
+    puts "Try again"
+    input = gets.chomp
     end
-    if answer !=password
-        puts "Fuck off"
-    end
-end
-
-puts login
 
 
+
+
+  if input == password
+    puts "welcome nice to see you again, let's talk about secrets things"
+  end
