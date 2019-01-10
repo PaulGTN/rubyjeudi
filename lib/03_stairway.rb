@@ -1,7 +1,7 @@
 # lancé de dé
 
 def roll_of_dice
-  a = rand(1..6)
+  a = rand (1..6)
   return a
   end
   
@@ -11,29 +11,25 @@ def roll_of_dice
       n = 0
     while n < 10
       a = roll_of_dice
-      if a ==5||6
-        n = +1
-        puts "Tu montes d'un étage"
+      if a == 5|| a == 6
+        n += + 1
+        puts "Tu montes d'un étage ! Tu es sur la marche #{n}"
       elsif a == 1
-        n = -1
-        puts "Tu  descends d'un étage"
+        n += - 1
+        puts "Tu  descends d'un étage ! Tu es sur la marche #{n} "
       else a == 2 ||3 ||4
         n = n 
-        puts "Tu ne bouges pas"
+        puts "Tu ne bouges pas ! Tu es sur la marche #{n}"
       end
   end 
-  end
-  
-  def fin(starter, game_length)
-      if n = 10
-    puts "Bravo tu as gagné"
-      end
+ 
+    puts "Bravo tu as gagné !!!"
+      
   end
   
   def perform
     starter = roll_of_dice
-    game_length = game
-    fin(starter, game_length)
+    game(starter)
   end
   
   perform
