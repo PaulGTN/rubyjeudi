@@ -1,5 +1,5 @@
 def say_hello
-    puts "Hello !"
+    return "Hello !"
 end
 
 puts say_hello
